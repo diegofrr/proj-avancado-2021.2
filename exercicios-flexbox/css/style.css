@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
+
+* {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--page-background);
+}
+
+.container {
+    background: linear-gradient(0deg, var(--page-background) 50%, var(--blue) 50%);
+    height: 100%;
+    width: 100%;
+    padding: 100px 20px 80px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+.description {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.princing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.separator {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+
+.card {
+    max-width: 280px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 60px 15px 15px 15px;
+    border-radius: 10px;
+    contain: content;
+}
+
+.popular-card {
+    transform: scale(1.03);
+}
+
+.tipo {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1em;
+    color: #333;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.popular-price {
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+
+.popular-price::before {
+    content: 'Popular';
+    position: absolute;
+    color: black;
+    display: block;
+    z-index: 9999;
+    right: 15px;
+    font-size: .7em;
+    background-color: var(--blue);
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: normal;
+}
+
+.sifrao {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.reais {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.centavos {
+    font-weight: 700;
+}
+
+.tempo {
+    color: #777;
+}
+
+.card__top-block {
+    width: 100%;
+}
+
+.descricao-plano {
+    font-size: .8em;
+    color: #999;
+}
+
+.card__chk-block {
+    width: 100%;
+    font-size: .7em;
+    color: #555;
+    font-weight: 500;
+}
+
+.card__chk-block p {
+    margin-bottom: 10px;
+}
+
+.card__chk-block .icon {
+    font-size: 1em;
+    color: green;
+}
+
+
+
+/* buttons style */
+
+.default-btn {
+    width: 100%;
+    min-height: 40px;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.pri-btn {
+    background-color: var(--blue);
+    color: white;
+    transition: all .3s ease;
+}
+
+.pri-btn:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+.sec-btn {
+    background-color: white;
+    color: var(--blue);
+    transition: all .3s ease;
+}
+
+.sec-btn:hover {
+    background-color: var(--blue);
+    color: white
+}
